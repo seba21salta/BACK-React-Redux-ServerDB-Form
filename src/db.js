@@ -6,15 +6,15 @@ const PostModel = require('./models/Post');
 const {DB_USER, DB_PASSWORD, DB_PUERTO, DB_DATABASE, DB_HOST, DB_DEPLOY} = process.env;
 
 
-  const sequelize = new Sequelize(
+ /*  const sequelize = new Sequelize(
     `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PUERTO}/${DB_DATABASE}`,
-    {logging: false});
+    {logging: false}); */
  
 
-  /*   const sequelize = new Sequelize(
+    const sequelize = new Sequelize(
         DB_DEPLOY,
         {logging: false});
-      */
+      
     
 
 UserModel(sequelize);
